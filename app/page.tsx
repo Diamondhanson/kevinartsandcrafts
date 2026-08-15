@@ -123,6 +123,33 @@ export default async function HomePage() {
         </Container>
       </Section>
 
+      {/* ------------------------------------------------- fitted storage */}
+      <Section tone="linen">
+        <Container>
+          <Reveal>
+            <SectionHeading
+              eyebrow="Fitted storage"
+              title="Wardrobes, built to the room"
+              intro="Alongside the carved work, the workshop builds wardrobe and storage units — hanging rails, adjustable shelving, drawers and pull-out racks, arranged around what actually has to go in them."
+            />
+          </Reveal>
+
+          {/* 16:9 to match the source file exactly — the brand mark sits at the
+              top of the image, so any crop would cut into it */}
+          <Reveal delay={120}>
+            <div className="relative mt-14 aspect-16/9 w-full overflow-hidden bg-bone">
+              <Image
+                src="/images/lifestyle/wardrobe-range.jpg"
+                alt="Three wardrobe units in black and white, each with a hanging rail, adjustable shelves, drawers with brass handles and pull-out racks below"
+                fill
+                sizes="(max-width: 1280px) 100vw, 1200px"
+                className="object-cover"
+              />
+            </div>
+          </Reveal>
+        </Container>
+      </Section>
+
       {/* ----------------------------------------------------- the craft */}
       <section className="relative">
         <div className="relative aspect-16/10 w-full sm:aspect-21/9">
