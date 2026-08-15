@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Furniture image set — preview &amp; usage</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font: 15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+         margin: 0; padding: 40px 24px 80px; max-width: 1100px; margin-inline: auto;
+         background: #fbfaf9; color: #1e1b19; }
+  h1 { font-size: 26px; margin: 0 0 6px; letter-spacing: -.01em; }
+  .lede { color: #6b625c; margin: 0 0 36px; }
+  .card { display: grid; grid-template-columns: 320px 1fr; gap: 24px; align-items: start;
+          background: #fff; border: 1px solid #ece7e3; border-radius: 14px;
+          padding: 18px; margin-bottom: 20px; }
+  .card > img { width: 100%; border-radius: 8px; background: #f4f1ee; }
+  .meta { min-width: 0; }
+  h2 { font-size: 17px; margin: 2px 0 8px; font-family: ui-monospace,SFMono-Regular,Menlo,monospace; }
+  .alt { margin: 0 0 6px; color: #4a423d; }
+  .dim { margin: 0 0 4px; color: #8a807a; font-size: 13px; }
+  pre { background: #f7f5f3; border: 1px solid #eee9e5; border-radius: 8px; padding: 12px;
+        overflow-x: auto; font-size: 12px; line-height: 1.5; margin: 12px 0 0; }
+  @media (max-width: 780px) { .card { grid-template-columns: 1fr; } }
+</style></head><body>
+<h1>Furniture image set</h1>
+<p class="lede">Enhanced, upscaled and exported for web. WebP first with a JPEG fallback — paste the
+markup under each image straight into your page. Product shots are cut out on white and also
+supplied as transparent PNGs.</p>
+
+    <section class="card">
+      <img src="product/padauk-stool-946.jpg" alt="Hand-carved padauk stool with interlaced branch legs">
+      <div class="meta">
+        <h2>padauk-stool</h2>
+        <p class="alt">alt: “Hand-carved padauk stool with interlaced branch legs”</p>
+        <p class="dim">946×946 · 720×720 · 480×480</p>
+        <p class="dim">946: 62KB jpg / 19KB webp · 720: 42KB jpg / 13KB webp · 480: 24KB jpg / 8KB webp</p>
+        <pre>&lt;picture&gt;
+  &lt;source type="image/webp" srcset="product/padauk-stool-480.webp 480w, product/padauk-stool-720.webp 720w, product/padauk-stool-946.webp 946w" sizes="(max-width: 800px) 100vw, 800px"&gt;
+  &lt;img src="product/padauk-stool-946.jpg" srcset="product/padauk-stool-480.jpg 480w, product/padauk-stool-720.jpg 720w, product/padauk-stool-946.jpg 946w"
+       sizes="(max-width: 800px) 100vw, 800px"
+       width="946" height="946" loading="lazy" decoding="async"
+       alt="Hand-carved padauk stool with interlaced branch legs"&gt;
+&lt;/picture&gt;</pre>
+      </div>
+    </section>
+    <section class="card">
+      <img src="product/carved-collection-1080.jpg" alt="Carved padauk sculptural pieces and bowl on turned wooden bases">
+      <div class="meta">
+        <h2>carved-collection</h2>
+        <p class="alt">alt: “Carved padauk sculptural pieces and bowl on turned wooden bases”</p>
+        <p class="dim">2564×1442 · 2160×1215 · 1440×810 · 1080×607 · 720×405 · 480×270</p>
+        <p class="dim">2564: 150KB jpg / 45KB webp · 2160: 113KB jpg / 35KB webp · 1440: 62KB jpg / 21KB webp · 1080: 41KB jpg / 15KB webp · 720: 23KB jpg / 9KB webp · 480: 13KB jpg / 5KB webp</p>
+        <pre>&lt;picture&gt;
+  &lt;source type="image/webp" srcset="product/carved-collection-480.webp 480w, product/carved-collection-720.webp 720w, product/carved-collection-1080.webp 1080w, product/carved-collection-1440.webp 1440w, product/carved-collection-2160.webp 2160w, product/carved-collection-2564.webp 2564w" sizes="(max-width: 800px) 100vw, 800px"&gt;
+  &lt;img src="product/carved-collection-1080.jpg" srcset="product/carved-collection-480.jpg 480w, product/carved-collection-720.jpg 720w, product/carved-collection-1080.jpg 1080w, product/carved-collection-1440.jpg 1440w, product/carved-collection-2160.jpg 2160w, product/carved-collection-2564.jpg 2564w"
+       sizes="(max-width: 800px) 100vw, 800px"
+       width="2564" height="1442" loading="lazy" decoding="async"
+       alt="Carved padauk sculptural pieces and bowl on turned wooden bases"&gt;
+&lt;/picture&gt;</pre>
+      </div>
+    </section>
+    <section class="card">
+      <img src="lifestyle/craftsman-portrait-1080.jpg" alt="Furniture maker seated in the workshop with his hand tools laid out">
+      <div class="meta">
+        <h2>craftsman-portrait</h2>
+        <p class="alt">alt: “Furniture maker seated in the workshop with his hand tools laid out”</p>
+        <p class="dim">2160×1216 · 1440×811 · 1080×608 · 720×405 · 480×270</p>
+        <p class="dim">2160: 278KB jpg / 92KB webp · 1440: 151KB jpg / 55KB webp · 1080: 94KB jpg / 40KB webp · 720: 53KB jpg / 23KB webp · 480: 28KB jpg / 13KB webp</p>
+        <pre>&lt;picture&gt;
+  &lt;source type="image/webp" srcset="lifestyle/craftsman-portrait-480.webp 480w, lifestyle/craftsman-portrait-720.webp 720w, lifestyle/craftsman-portrait-1080.webp 1080w, lifestyle/craftsman-portrait-1440.webp 1440w, lifestyle/craftsman-portrait-2160.webp 2160w" sizes="(max-width: 800px) 100vw, 800px"&gt;
+  &lt;img src="lifestyle/craftsman-portrait-1080.jpg" srcset="lifestyle/craftsman-portrait-480.jpg 480w, lifestyle/craftsman-portrait-720.jpg 720w, lifestyle/craftsman-portrait-1080.jpg 1080w, lifestyle/craftsman-portrait-1440.jpg 1440w, lifestyle/craftsman-portrait-2160.jpg 2160w"
+       sizes="(max-width: 800px) 100vw, 800px"
+       width="2160" height="1216" loading="lazy" decoding="async"
+       alt="Furniture maker seated in the workshop with his hand tools laid out"&gt;
+&lt;/picture&gt;</pre>
+      </div>
+    </section>
+    <section class="card">
+      <img src="lifestyle/craftsman-at-work-1080.jpg" alt="Furniture maker planing a padauk board by hand in the workshop">
+      <div class="meta">
+        <h2>craftsman-at-work</h2>
+        <p class="alt">alt: “Furniture maker planing a padauk board by hand in the workshop”</p>
+        <p class="dim">2160×1216 · 1440×811 · 1080×608 · 720×405 · 480×270</p>
+        <p class="dim">2160: 278KB jpg / 90KB webp · 1440: 152KB jpg / 54KB webp · 1080: 95KB jpg / 39KB webp · 720: 54KB jpg / 24KB webp · 480: 28KB jpg / 13KB webp</p>
+        <pre>&lt;picture&gt;
+  &lt;source type="image/webp" srcset="lifestyle/craftsman-at-work-480.webp 480w, lifestyle/craftsman-at-work-720.webp 720w, lifestyle/craftsman-at-work-1080.webp 1080w, lifestyle/craftsman-at-work-1440.webp 1440w, lifestyle/craftsman-at-work-2160.webp 2160w" sizes="(max-width: 800px) 100vw, 800px"&gt;
+  &lt;img src="lifestyle/craftsman-at-work-1080.jpg" srcset="lifestyle/craftsman-at-work-480.jpg 480w, lifestyle/craftsman-at-work-720.jpg 720w, lifestyle/craftsman-at-work-1080.jpg 1080w, lifestyle/craftsman-at-work-1440.jpg 1440w, lifestyle/craftsman-at-work-2160.jpg 2160w"
+       sizes="(max-width: 800px) 100vw, 800px"
+       width="2160" height="1216" loading="lazy" decoding="async"
+       alt="Furniture maker planing a padauk board by hand in the workshop"&gt;
+&lt;/picture&gt;</pre>
+      </div>
+    </section>
+</body></html>
