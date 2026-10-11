@@ -113,7 +113,7 @@ export const products: Product[] = [
     price: null,
     currency: "XAF",
     year: 2025,
-    featured: true,
+    featured: false,
     available: true,
   },
   {
@@ -276,7 +276,7 @@ export const products: Product[] = [
     price: null,
     currency: "XAF",
     year: 2026,
-    featured: false,
+    featured: true,
     available: true,
   },
 ];
