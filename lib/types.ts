@@ -11,6 +11,11 @@ export type ProductImage = {
   alt: string;
   /** "cutout" images sit on white and are shown contained; "scene" images fill their frame. */
   kind: "cutout" | "scene";
+  /**
+   * Taller than it is wide. The gallery's default 4:3 frame would crop the top
+   * and bottom off a standing piece, so portrait images get a 4:5 frame.
+   */
+  portrait?: boolean;
 };
 
 export type Product = {
@@ -22,10 +27,11 @@ export type Product = {
   /** Two or three paragraphs for the detail page. */
   story: string[];
   images: ProductImage[];
-  materials: string;
-  dimensions: string;
-  finish: string;
-  leadTime: string;
+  /** The four specs below are omitted entirely when they are not known yet. */
+  materials?: string;
+  dimensions?: string;
+  finish?: string;
+  leadTime?: string;
   /** null renders as "Price on request" — the default for commissioned work. */
   price: number | null;
   currency: string;

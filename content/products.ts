@@ -211,4 +211,72 @@ export const products: Product[] = [
     featured: false,
     available: true,
   },
+  {
+    slug: "display-cabinet",
+    name: "Display Cabinet",
+    category: "furniture",
+    summary: "A panelled cupboard, two open shelves and three drawers in one standing unit",
+    story: [
+      "Three kinds of storage stacked into one run. A pair of panelled doors closes the top. Two open shelves sit in the middle for the things worth looking at. Three drawers take the rest.",
+      "The doors are framed and fielded — each panel raised inside the frame around it — so the front catches light across several planes instead of reading as one flat face. The whole carcass is polished rather than left matt, which is what gives the grain its depth.",
+    ],
+    images: [
+      {
+        src: "/images/products/display-cabinet.jpg",
+        alt: "A tall hardwood display cabinet: two panelled doors above, two open shelves in the middle, two small drawers and one full-width drawer below",
+        kind: "scene",
+        portrait: true,
+      },
+    ],
+    price: null,
+    currency: "XAF",
+    year: 2026,
+    featured: false,
+    available: true,
+  },
+  {
+    slug: "wall-lockers",
+    name: "Wall Lockers",
+    category: "furniture",
+    summary: "Ten lockable compartments in a single wall-mounted run",
+    story: [
+      "Ten compartments in two rows of five, each with its own door, handle and lock. The unit hangs off the wall rather than standing on the floor, so the space underneath stays clear and the whole run can be set at whatever height suits the room.",
+      "Built for places where several people share one space — an office, a workshop, a changing room, a household where everyone needs somewhere of their own that shuts.",
+    ],
+    images: [
+      {
+        src: "/images/products/wall-lockers.jpg",
+        alt: "A wall-mounted run of ten hardwood lockers in two rows of five, each with a black handle and a key lock",
+        kind: "scene",
+      },
+    ],
+    price: null,
+    currency: "XAF",
+    year: 2026,
+    featured: false,
+    available: true,
+  },
+  {
+    slug: "mirrored-wardrobe",
+    name: "Mirrored Wardrobe",
+    category: "furniture",
+    summary: "A two-door hanging section with a mirrored end and three drawers",
+    story: [
+      "Two tall panelled doors front the hanging space. Alongside them a narrower section carries a full-length mirror above three drawers, so dressing happens in one place instead of three.",
+      "The doors are shaped at the head rather than cut square, and the panels are raised inside their frames. It stands against the wall at the height of the person who made it, which is the easiest way to read the scale of it.",
+    ],
+    images: [
+      {
+        src: "/images/products/mirrored-wardrobe.jpg",
+        alt: "A hardwood wardrobe with two panelled doors, a mirrored side section above three drawers, and the maker standing beside it for scale",
+        kind: "scene",
+        portrait: true,
+      },
+    ],
+    price: null,
+    currency: "XAF",
+    year: 2026,
+    featured: false,
+    available: true,
+  },
 ];

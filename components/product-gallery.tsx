@@ -12,10 +12,14 @@ export function ProductGallery({ images, name }: { images: ProductImage[]; name:
     return <div className="aspect-4/3 w-full bg-linen" aria-hidden="true" />;
   }
 
+  // a standing piece shot in portrait loses its head and its feet to the
+  // default 4:3 frame, so it gets a taller one
+  const frame = current.portrait ? "aspect-4/5" : "aspect-4/3";
+
   return (
     <div>
       <div
-        className={`relative aspect-4/3 overflow-hidden ${
+        className={`relative ${frame} overflow-hidden ${
           current.kind === "cutout" ? "bg-bone" : "bg-linen"
         }`}
       >

@@ -51,12 +51,17 @@ create table if not exists public.product_images (
   src        text not null,                 -- "/images/products/x.jpg" or a full URL
   alt        text not null default '',
   kind       text not null default 'scene', -- 'cutout' (on white) | 'scene'
+  portrait   boolean not null default false, -- taller than wide: shown in a 4:5 frame
   sort_order integer not null default 0,
   created_at timestamptz not null default now(),
   constraint product_images_kind_check check (kind in ('cutout', 'scene'))
 );
 
 create index if not exists product_images_product_idx on public.product_images (product_id);
+
+-- added later: existing installs pick the column up here
+alter table public.product_images
+  add column if not exists portrait boolean not null default false;
 
 -- ------------------------------------------------------------------ enquiries
 create table if not exists public.enquiries (

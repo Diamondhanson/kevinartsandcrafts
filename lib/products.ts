@@ -33,7 +33,15 @@ type ProductRow = {
   featured: boolean | null;
   available: boolean | null;
   sort_order: number | null;
-  product_images: { src: string; alt: string | null; kind: string | null; sort_order: number | null }[] | null;
+  product_images:
+    | {
+        src: string;
+        alt: string | null;
+        kind: string | null;
+        portrait: boolean | null;
+        sort_order: number | null;
+      }[]
+    | null;
 };
 
 function rowToProduct(row: ProductRow): Product {
@@ -44,6 +52,7 @@ function rowToProduct(row: ProductRow): Product {
       src: image.src,
       alt: image.alt ?? row.name,
       kind: image.kind === "scene" ? "scene" : "cutout",
+      portrait: image.portrait ?? undefined,
     }));
 
   return {
@@ -53,10 +62,11 @@ function rowToProduct(row: ProductRow): Product {
     summary: row.summary,
     story: row.story ?? [],
     images,
-    materials: row.materials ?? "—",
-    dimensions: row.dimensions ?? "—",
-    finish: row.finish ?? "—",
-    leadTime: row.lead_time ?? "Ask",
+    // left undefined rather than dashed out, so the page omits the row
+    materials: row.materials ?? undefined,
+    dimensions: row.dimensions ?? undefined,
+    finish: row.finish ?? undefined,
+    leadTime: row.lead_time ?? undefined,
     price: row.price,
     currency: row.currency ?? "XAF",
     year: row.year ?? new Date().getFullYear(),

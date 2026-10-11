@@ -35,7 +35,8 @@ export async function generateMetadata({
 
   if (!product) return { title: "Piece not found" };
 
-  const description = `${product.summary}. ${product.materials}, ${product.dimensions}. Made by hand at ${site.name}.`;
+  const spec = [product.materials, product.dimensions].filter(Boolean).join(", ");
+  const description = `${product.summary}.${spec ? ` ${spec}.` : ""} Made by hand at ${site.name}.`;
 
   return {
     title: product.name,
@@ -59,12 +60,14 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
 
   const related = await getRelatedProducts(slug, 3);
 
-  const specs: [string, string][] = [
+  // a piece can be published before its specs are known; only list what we have
+  const allSpecs: [string, string | undefined][] = [
     ["Materials", product.materials],
     ["Dimensions", product.dimensions],
     ["Finish", product.finish],
     ["Lead time", product.leadTime],
   ];
+  const specs = allSpecs.filter((entry): entry is [string, string] => Boolean(entry[1]));
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -72,7 +75,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
     name: product.name,
     description: product.summary,
     image: product.images.map((image) => `${site.url}${image.src}`),
-    material: product.materials,
+    ...(product.materials ? { material: product.materials } : {}),
     brand: { "@type": "Brand", name: site.name },
     offers: {
       "@type": "Offer",
@@ -133,17 +136,19 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
                 </ButtonLink>
               </div>
 
-              <dl className="mt-12 border-t border-stone">
-                {specs.map(([label, value]) => (
-                  <div
-                    key={label}
-                    className="flex items-baseline justify-between gap-6 border-b border-stone py-4"
-                  >
-                    <dt className="eyebrow">{label}</dt>
-                    <dd className="text-right text-[0.9375rem] text-graphite">{value}</dd>
-                  </div>
-                ))}
-              </dl>
+              {specs.length > 0 && (
+                <dl className="mt-12 border-t border-stone">
+                  {specs.map(([label, value]) => (
+                    <div
+                      key={label}
+                      className="flex items-baseline justify-between gap-6 border-b border-stone py-4"
+                    >
+                      <dt className="eyebrow">{label}</dt>
+                      <dd className="text-right text-[0.9375rem] text-graphite">{value}</dd>
+                    </div>
+                  ))}
+                </dl>
+              )}
             </div>
           </div>
         </Container>
