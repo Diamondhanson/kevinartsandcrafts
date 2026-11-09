@@ -16,11 +16,17 @@ export const site = {
   // TODO: replace with the real domain once it is registered
   url: "https://kivensartsandcrafts.com",
 
-  // TODO: replace with real contact details
-  email: "hello@kivensartsandcrafts.com",
-  phoneDisplay: "+237 6 00 00 00 00",
+  email: "Kevinnumia@yahoo.com",
+
+  /** Calls and SMS — the Cameroon line. */
+  phoneDisplay: "+237 670 45 16 70",
+  /** What tel: needs: country code, no spaces. */
+  phoneTel: "+237670451670",
+
+  /** WhatsApp is a separate line, in the UAE — not the number above. */
+  whatsappDisplay: "+971 52 290 5700",
   /** Digits only, with country code, no + or spaces — this is what wa.me needs. */
-  whatsapp: "237600000000",
+  whatsapp: "971522905700",
 
   location: {
     city: "Douala",

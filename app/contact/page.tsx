@@ -61,7 +61,14 @@ export default async function ContactPage() {
     description: site.description,
     url: site.url,
     email: site.email,
-    telephone: site.phoneDisplay,
+    telephone: site.phoneTel,
+    contactPoint: {
+      "@type": "ContactPoint",
+      contactType: "customer service",
+      telephone: `+${site.whatsapp}`,
+      contactOption: "TollFree",
+      availableLanguage: ["en", "fr"],
+    },
     address: {
       "@type": "PostalAddress",
       addressLocality: site.location.city,
@@ -148,10 +155,24 @@ export default async function ContactPage() {
                     <dt className="eyebrow">Phone</dt>
                     <dd className="mt-2.5">
                       <a
-                        href={`tel:${site.phoneDisplay.replace(/\s/g, "")}`}
+                        href={`tel:${site.phoneTel}`}
                         className="link-underline text-[1.0625rem] text-ink"
                       >
                         {site.phoneDisplay}
+                      </a>
+                    </dd>
+                  </div>
+                  <div>
+                    {/* a different line from the one above, so it is listed separately */}
+                    <dt className="eyebrow">WhatsApp</dt>
+                    <dd className="mt-2.5">
+                      <a
+                        href={whatsappLink(`Hello ${site.founder}, I found you through your website.`)}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="link-underline text-[1.0625rem] text-ink"
+                      >
+                        {site.whatsappDisplay}
                       </a>
                     </dd>
                   </div>

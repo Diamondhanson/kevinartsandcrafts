@@ -48,7 +48,7 @@ export function SiteFooter() {
               </li>
               <li>
                 <a
-                  href={`tel:${site.phoneDisplay.replace(/\s/g, "")}`}
+                  href={`tel:${site.phoneTel}`}
                   className="link-underline hover:text-bone"
                 >
                   {site.phoneDisplay}
@@ -66,7 +66,7 @@ export function SiteFooter() {
                 >
                   <WhatsAppIcon className="h-4 w-4" />
                   <span className="link-underline text-[0.8125rem] font-semibold uppercase tracking-[0.14em]">
-                    WhatsApp
+                    WhatsApp {site.whatsappDisplay}
                   </span>
                 </a>
               </li>
