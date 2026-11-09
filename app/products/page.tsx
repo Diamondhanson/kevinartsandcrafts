@@ -8,7 +8,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "The Collection",
   description:
-    "Hand-carved furniture, sculpture and homeware from the Kivens workshop. Each piece is made one at a time in local hardwoods.",
+    "Hand-carved furniture, sculpture and homeware from the Kevin's workshop. Each piece is made one at a time in local hardwoods.",
   alternates: { canonical: "/products" },
   openGraph: {
     title: `The Collection · ${site.name}`,

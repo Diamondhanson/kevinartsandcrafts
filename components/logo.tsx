@@ -1,5 +1,7 @@
+import { site } from "@/lib/site";
+
 /**
- * The Kivens mark — a K abstracted from the interlaced branch legs of the
+ * The Kevin's mark — a K abstracted from the interlaced branch legs of the
  * stool. Three strokes, woven: the arm passes behind the stem, the leg in
  * front of it. The weave is created purely by paint order, so the mark stays a
  * single colour and inherits `currentColor`.
@@ -40,7 +42,7 @@ export function Logo({
       <LogoMark className={`${markClassName} shrink-0`} />
       <span className="flex flex-col gap-[3px]">
         <span className="font-display text-[1.05rem] uppercase leading-none tracking-[0.16em]">
-          Kivens
+          {site.shortName}
         </span>
         {showSub && (
           <span className="text-[0.5rem] font-semibold uppercase leading-none tracking-[0.3em] text-graphite">

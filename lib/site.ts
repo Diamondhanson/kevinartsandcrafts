@@ -7,14 +7,14 @@
  */
 
 export const site = {
-  name: "Kivens Arts and Crafts",
-  shortName: "Kivens",
+  name: "Kevin's Arts and Crafts",
+  shortName: "Kevin's",
   tagline: "Handmade furniture and carved art",
   description:
     "Handmade furniture and carved sculpture from Cameroon. Each piece is worked by hand in local hardwoods — padauk, iroko, mahogany — and made one at a time.",
 
   // TODO: replace with the real domain once it is registered
-  url: "https://kivensartsandcrafts.com",
+  url: "https://kevinsartsandcrafts.com",
 
   email: "Kevinnumia@yahoo.com",
 
@@ -43,7 +43,7 @@ export const site = {
     facebook: "https://facebook.com/",
   },
 
-  founder: "Kiven",
+  founder: "Kevin",
 } as const;
 
 /** Builds a wa.me link with the message pre-filled. */

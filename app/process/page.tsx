@@ -7,7 +7,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "The Craft",
   description:
-    "How a piece is made at Kivens Arts and Crafts — from choosing the board to the final coat of wax. Hand tools, cut joints and no shortcuts.",
+    "How a piece is made at Kevin's Arts and Crafts — from choosing the board to the final coat of wax. Hand tools, cut joints and no shortcuts.",
   alternates: { canonical: "/process" },
   openGraph: {
     title: `The Craft · ${site.name}`,
@@ -71,7 +71,7 @@ export default function ProcessPage() {
             <div className="relative aspect-16/10 w-full overflow-hidden bg-linen sm:aspect-21/9">
               <Image
                 src="/images/lifestyle/craftsman-at-work.jpg"
-                alt="Kiven planing a padauk board by hand, tools laid out around him"
+                alt="Kevin planing a padauk board by hand, tools laid out around him"
                 fill
                 sizes="100vw"
                 loading="eager"

@@ -59,7 +59,7 @@ export default function AboutPage() {
                 had given up on.
               </p>
               <p className="text-[1.0625rem] leading-[1.9] text-graphite">
-                {/* TODO: replace this section with Kiven's own words — where he trained, who
+                {/* TODO: replace this section with Kevin's own words — where he trained, who
                     taught him, and how the workshop came about. */}
                 Chairs with loose joints, a table with a split top, a door that had swollen and
                 stopped closing. Taking apart furniture built by someone else is the fastest way

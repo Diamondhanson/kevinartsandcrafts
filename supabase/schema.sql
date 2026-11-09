@@ -1,5 +1,5 @@
 -- =============================================================================
--- Kivens Arts and Crafts — database schema
+-- Kevin's Arts and Crafts — database schema
 -- =============================================================================
 -- HOW TO USE THIS FILE
 --   1. Create a free project at https://supabase.com

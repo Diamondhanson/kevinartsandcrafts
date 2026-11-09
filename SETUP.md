@@ -1,4 +1,4 @@
-# Kivens Arts and Crafts — setup guide
+# Kevin's Arts and Crafts — setup guide
 
 Written for someone who is not a developer. Follow it top to bottom.
 
@@ -31,7 +31,7 @@ The values marked `TODO` are placeholders and **must** be replaced before going 
 
 | Field | What to put |
 |---|---|
-| `url` | Your real domain, e.g. `https://kivensartsandcrafts.com` |
+| `url` | Your real domain, e.g. `https://kevinsartsandcrafts.com` |
 | `email` | The inbox you actually check |
 | `phoneDisplay` | The number as you want it shown, spaces and all |
 | `whatsapp` | **Digits only, with country code, no `+` and no spaces.** For `+237 6 12 34 56 78` write `237612345678` |
@@ -181,7 +181,7 @@ public/images/       all the photographs
 - [ ] Replace the placeholder contact details in `lib/site.ts`
 - [ ] Replace the testimonial on the home page with a real client's words
       (`app/page.tsx`, search for `TODO`)
-- [ ] Rewrite the middle of the About page in Kiven's own words
+- [ ] Rewrite the middle of the About page in Kevin's own words
       (`app/about/page.tsx`, search for `TODO`)
 - [ ] Take better photographs of each piece and replace the ones in `public/images/products/`
 - [ ] Buy the domain and point it at Vercel

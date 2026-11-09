@@ -1,6 +1,6 @@
 # Image credits
 
-Most photography on this site is Kiven's own — the products, the workshop, and the
+Most photography on this site is Kevin's own — the products, the workshop, and the
 maker portraits. A small number of generic "texture" shots are licensed stock, listed
 here so the provenance stays traceable.
 
@@ -21,7 +21,7 @@ never to represent a specific product or the maker himself.
 ## Not stock
 
 Everything under `public/images/products/` and `public/images/lifestyle/`, plus
-`public/images/details/carving.jpg` and `public/images/details/joint.jpg`, is Kiven's
+`public/images/details/carving.jpg` and `public/images/details/joint.jpg`, is Kevin's
 own work and must not be swapped for stock: those frames show real pieces and the real
 maker.
 
@@ -32,7 +32,7 @@ supplied as `WhatsApp Image 2026-08-10 at 3.54.27 PM.jpeg` and kept in
 `furniture-web-images/` in its original form. Two things to know about it:
 
 - **It carries a different brand mark.** The words "Kev | HOME FURNITURES" are baked
-  into the pixels, while the rest of the site is "Kivens Arts and Crafts". Nothing in
+  into the pixels, while the rest of the site is "Kevin's Arts and Crafts". Nothing in
   code can change that — it needs a re-exported file.
 - **It is 1600 × 900**, smaller than the other full-width images, so it is shown inside
   the container rather than full-bleed. Its 16:9 frame matches the file exactly because
@@ -66,7 +66,7 @@ Two caveats:
 
 - **The locker photograph carries a third brand mark.** "K-furniture — Quality
   Furniture for a Better Home" and "@K-furniture" are baked into the wall behind the
-  unit. With "Kev | HOME FURNITURES" on the home page banner and "Kivens Arts and
+  unit. With "Kev | HOME FURNITURES" on the home page banner and "Kevin's Arts and
   Crafts" everywhere else, the site now shows three names. Only a re-export fixes it.
 - **The sources are 960–1280px.** Output is 1600px wide, so there is mild upscaling.
   Fine at card and detail size, soft if ever shown full-bleed. Higher-resolution

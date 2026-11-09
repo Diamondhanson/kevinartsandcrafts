@@ -174,7 +174,7 @@ export const products: Product[] = [
       "Tell me what you have in mind and I will come back with a drawing and a price before anything is committed.",
     ],
     images: [
-      { src: "/images/lifestyle/craftsman-at-work.jpg", alt: "Kiven planing a padauk board by hand in the workshop", kind: "scene" },
+      { src: "/images/lifestyle/craftsman-at-work.jpg", alt: "Kevin planing a padauk board by hand in the workshop", kind: "scene" },
       { src: "/images/details/tools-bench.jpg", alt: "Carving gouges and chisels laid out across a workbench", kind: "scene" },
     ],
     materials: "Padauk, iroko, mahogany, or a timber you choose",
@@ -199,7 +199,7 @@ export const products: Product[] = [
     ],
     images: [
       { src: "/images/details/chisel-cut.jpg", alt: "A chisel paring a curve into a board, shavings gathered around the cut", kind: "scene" },
-      { src: "/images/lifestyle/craftsman-portrait.jpg", alt: "Kiven in the workshop with his tools laid out around him", kind: "scene" },
+      { src: "/images/lifestyle/craftsman-portrait.jpg", alt: "Kevin in the workshop with his tools laid out around him", kind: "scene" },
     ],
     materials: "Matched to the original piece",
     dimensions: "—",

@@ -155,7 +155,7 @@ export default async function HomePage() {
         <div className="relative aspect-16/10 w-full sm:aspect-21/9">
           <Image
             src="/images/lifestyle/craftsman-at-work.jpg"
-            alt="Kiven planing a padauk board by hand on the workshop floor"
+            alt="Kevin planing a padauk board by hand on the workshop floor"
             fill
             sizes="100vw"
             className="object-cover"
