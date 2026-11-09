@@ -41,6 +41,11 @@ yarn-error.log*
 # local scratch — staging copy of the site and a zip, not part of the project
 /_to_delete/
 
+# master video rushes — the workshop film's source is 532MB, far over GitHub's
+# 100MB per-file limit. The web encode in public/video/ is what ships; keep the
+# original wherever you keep the rest of the camera files.
+/furniture-web-images/**/*.mp4
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

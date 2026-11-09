@@ -75,3 +75,53 @@ Two caveats:
 The specs — materials, dimensions, finish and lead time — were deliberately left off
 these three. `Product` treats all four as optional and the detail page omits the table
 entirely when none are known, so they can be filled in later without touching code.
+
+### The workshop film, November 2026
+
+`public/video/workshop-film.mp4` — supplied as `CAENTER Video.mp4`.
+
+The original is **not in this repository**: at 532 MB it is five times GitHub's 100 MB
+per-file limit, so `furniture-web-images/**/*.mp4` is gitignored. It is still on the
+machine it was added from, under `furniture-web-images/product/` — keep it with the
+rest of the camera rushes, because it cannot be recovered from what ships here.
+
+The original is 3840 × 2160, 118 seconds, 36 Mbps, **532 MB**. That cannot go on a web
+page or into a git repository, so what ships is a re-encode: 1600 × 900, H.264 CRF 27,
+AAC 96k, `+faststart` for progressive streaming — **28.8 MB**, the full 118 seconds,
+nothing trimmed. A 1080p/CRF 25 encode was tried first at 46 MB; compared frame to
+frame at full crop the two were indistinguishable, so the smaller one won.
+
+It sits in a click-to-play block on the home page with `preload="none"`, so the 28.8 MB
+is fetched only when a visitor presses play — verified: a page load makes no request
+for the file at all. The poster is a frame at t=95s.
+
+**This is the one asset worth reconsidering.** 28.8 MB is under GitHub's 100 MB limit
+and fine on Vercel's CDN, but it is in the repository permanently and every clone pays
+for it. A video host (Vimeo, Mux, Cloudflare Stream) would give adaptive bitrate, a
+smaller repository, and better playback on slow connections. Swapping the `<video>`
+block for an embed is a contained change if that is ever wanted.
+
+### The four dishes, November 2026
+
+Supplied as one 1195 × 896 sheet, `E-commerce Product Photo Transformation (1).jpeg`,
+holding four studio shots in a 2 × 2 grid. Split into four separate cutouts:
+
+| Published file | Piece |
+| --- | --- |
+| `public/images/products/crescent-dish.png` | Crescent Dish |
+| `public/images/products/wave-rim-platter.png` | Wave-Rim Platter |
+| `public/images/products/leaf-dish.png` | Leaf Dish |
+| `public/images/products/plain-round-dish.png` | Plain Round Dish |
+
+Each quadrant was cut at the sheet's midpoints with a 6px inset to clear the divider,
+then the backdrop was removed by flooding inward from the border over pixels that are
+both neutral and light — chroma rather than brightness, because a brightness threshold
+eats into the pale inner floor of each dish. The contact shadows are kept. Each piece
+is then centred on a square transparent canvas at a common scale, so the four read as a
+set rather than four unrelated crops, and saved as full-colour PNG. Palette
+quantisation would have cut them from ~600 KB to ~100 KB each but visibly posterised
+the wood, so it was not used.
+
+As with the three furniture pieces, materials, dimensions, finish and lead time are
+left off until someone who knows them supplies them. The descriptions cover only what
+is visible in the photographs — shape and carving — and name no timber.

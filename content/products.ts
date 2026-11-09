@@ -279,4 +279,92 @@ export const products: Product[] = [
     featured: true,
     available: true,
   },
+  {
+    slug: "crescent-dish",
+    name: "Crescent Dish",
+    category: "homeware",
+    summary: "An oval dish with a crescent of chip-carved triangles along one rim",
+    story: [
+      "The bowl is scooped from a single piece and left plain, so that nothing competes with the grain running across the floor of it. The decoration is held to one side: a crescent of stepped triangles, each one cut in by hand, sweeping from rim to rim.",
+      "Because the carving sits on one edge only, the dish reads differently depending on how it is turned — pattern forward on a table, or pattern away and almost undecorated.",
+    ],
+    images: [
+      {
+        src: "/images/products/crescent-dish.png",
+        alt: "An oval wooden dish, its rim carved on one side with a crescent of stepped triangles",
+        kind: "cutout",
+      },
+    ],
+    price: null,
+    currency: "XAF",
+    year: 2026,
+    featured: false,
+    available: true,
+  },
+  {
+    slug: "wave-rim-platter",
+    name: "Wave-Rim Platter",
+    category: "homeware",
+    summary: "A round platter with a deeply carved wave running the whole way round the rim",
+    story: [
+      "The rim is cut into a continuous wave, each trough gouged out and each crest left standing, so the border throws a ring of shadow that shifts as the light moves across it.",
+      "Inside, the floor is left smooth and undecorated — a wide, shallow well for fruit, bread or nothing at all.",
+    ],
+    images: [
+      {
+        src: "/images/products/wave-rim-platter.png",
+        alt: "A round wooden platter with a wide rim carved into a continuous wave pattern",
+        kind: "cutout",
+      },
+    ],
+    price: null,
+    currency: "XAF",
+    year: 2026,
+    featured: false,
+    available: true,
+  },
+  {
+    slug: "leaf-dish",
+    name: "Leaf Dish",
+    category: "homeware",
+    summary: "A pointed oval dish, carved with stepped triangles at both ends",
+    story: [
+      "Drawn out to a point at each end, so the shape reads as a leaf rather than a bowl. The two tips carry the same stepped-triangle motif, which narrows as the dish narrows.",
+      "Shallower than the others in the group and longer than it is wide, it suits a table runner, a shelf, or a pair of hands.",
+    ],
+    images: [
+      {
+        src: "/images/products/leaf-dish.png",
+        alt: "A pointed oval wooden dish with stepped triangular carving at both ends",
+        kind: "cutout",
+      },
+    ],
+    price: null,
+    currency: "XAF",
+    year: 2026,
+    featured: false,
+    available: true,
+  },
+  {
+    slug: "plain-round-dish",
+    name: "Plain Round Dish",
+    category: "homeware",
+    summary: "A round dish left entirely undecorated, so the grain does the work",
+    story: [
+      "No carving anywhere on it. The whole piece is given over to the figure in the timber, which runs in a broad sweep across the floor of the bowl and out over the rim.",
+      "It is the quietest piece in the group, and the one that shows most plainly how the others begin before any pattern is cut into them.",
+    ],
+    images: [
+      {
+        src: "/images/products/plain-round-dish.png",
+        alt: "A plain round wooden dish with no carving, showing the figure of the grain",
+        kind: "cutout",
+      },
+    ],
+    price: null,
+    currency: "XAF",
+    year: 2026,
+    featured: false,
+    available: true,
+  },
 ];

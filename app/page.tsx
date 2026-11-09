@@ -186,6 +186,53 @@ export default async function HomePage() {
         </Container>
       </section>
 
+      {/* ------------------------------------------------------------ film */}
+      <Section tone="ink">
+        <Container>
+          <div className="grid gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:items-center lg:gap-16">
+            <Reveal>
+              <div>
+                <Eyebrow className="!text-ash">The film</Eyebrow>
+                <h2 className="mt-6 text-[2rem] leading-[1.14] sm:text-[2.5rem]">
+                  Two minutes in the workshop
+                </h2>
+                <p className="mt-6 max-w-[48ch] text-[1.0625rem] leading-[1.8] text-stone">
+                  A board of padauk goes in. It is sawn, marked, gouged, rasped and
+                  smoothed, and a stool comes out. No commentary, no time-lapse tricks —
+                  just the work, at the speed it actually happens.
+                </p>
+                <div className="mt-9">
+                  <TextLink href="/process" className="!text-bone hover:!text-clay-soft">
+                    Read how a piece is made
+                  </TextLink>
+                </div>
+              </div>
+            </Reveal>
+
+            <Reveal delay={120}>
+              {/* preload="none" matters: the file is ~29MB and most visitors will
+                  never press play, so nothing is fetched until they do */}
+              <video
+                controls
+                playsInline
+                preload="none"
+                poster="/images/lifestyle/workshop-film-poster.jpg"
+                className="aspect-video w-full bg-ink ring-1 ring-inset ring-stone/25"
+              >
+                <source src="/video/workshop-film.mp4" type="video/mp4" />
+                <p className="p-6 text-stone">
+                  Your browser cannot play this video.{" "}
+                  <a href="/video/workshop-film.mp4" className="underline">
+                    Download it instead
+                  </a>
+                  .
+                </p>
+              </video>
+            </Reveal>
+          </div>
+        </Container>
+      </Section>
+
       {/* ------------------------------------------------------- materials */}
       <Section>
         <Container>
