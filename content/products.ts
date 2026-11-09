@@ -367,4 +367,31 @@ export const products: Product[] = [
     featured: false,
     available: true,
   },
+  {
+    slug: "triangle-rim-bowl",
+    name: "Triangle-Rim Bowl",
+    category: "homeware",
+    summary: "A deep round bowl with a band of nested triangles cut the whole way round the rim",
+    story: [
+      "The rim is given over entirely to pattern. A band of triangles runs the full circle, each one outlined and then cut again inside itself, so the border throws two rings of shadow rather than one. The cuts are shallow and evenly spaced, and the band changes character as you walk past it.",
+      "Below the band the piece is left alone. The well is turned smooth and deep enough to be used rather than looked at, and the figure of the board runs plainly across the floor of it.",
+    ],
+    images: [
+      {
+        src: "/images/products/triangle-rim-bowl.jpg",
+        alt: "A round wooden bowl with a broad rim carved in a continuous band of nested triangles",
+        kind: "scene",
+      },
+      {
+        src: "/images/products/triangle-rim-bowl-overhead.jpg",
+        alt: "The same bowl seen from above, the band of triangles running right round the rim",
+        kind: "scene",
+      },
+    ],
+    price: null,
+    currency: "XAF",
+    year: 2026,
+    featured: false,
+    available: true,
+  },
 ];

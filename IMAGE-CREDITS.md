@@ -125,3 +125,47 @@ the wood, so it was not used.
 As with the three furniture pieces, materials, dimensions, finish and lead time are
 left off until someone who knows them supplies them. The descriptions cover only what
 is visible in the photographs — shape and carving — and name no timber.
+
+### The triangle-rim bowl, November 2026
+
+Supplied as a second 1195 × 896 sheet, archived as
+`furniture-web-images/product/carved-bowl-grid.jpg`, again holding four studio shots in
+a 2 × 2 grid — but of **one** bowl, not four pieces: two three-quarter takes on the top
+row and two overhead takes below.
+
+That was checked rather than assumed. The rim band of both overhead shots was unrolled
+into a flat strip and compared: same motif, same unit count, same band radius as a
+fraction of the bowl, and the top row carries that same band at the same proportion.
+The only difference between the two overhead takes is the figure in the timber, which
+is what you would expect from a tool that regenerates the piece on each pass — the file
+the first sheet arrived under was named "E-commerce Product Photo Transformation".
+
+So it is published as one piece with two views:
+
+| Published file | View |
+| --- | --- |
+| `public/images/products/triangle-rim-bowl.jpg` | Three-quarter |
+| `public/images/products/triangle-rim-bowl-overhead.jpg` | From above |
+
+**These are not cutouts**, unlike the four dishes above. The sheet's backdrop is already
+clean and evenly lit, and each bowl sits on a soft contact shadow that gives it weight
+on the page. Removing all that was tried and discarded: it left the piece floating with
+a hard, slightly ragged edge where the photograph had a soft one. The crops are
+published as shot.
+
+The only reframing is squaring up. Each published image has to survive three different
+frames — the card crops to 4:5, the gallery to 4:3, the thumbnail to 1:1 — and a square
+canvas is the only shape that loses nothing in all three, provided the piece stays
+inside roughly 76% of the width and 72% of the height. It does: 72 × 35 for the
+three-quarter view, 62 × 62 for the overhead. The quadrants are 4:3, so the backdrop is
+extended vertically by replicating the edge rows. That is safe here because no border
+row or column of either crop is touched by the bowl or its shadow, and the backdrop is
+a near-flat vertical gradient — about one level of brightness across the 70-odd rows
+added — so the join does not read.
+
+Then scaled to 1000 × 1000 to match the dishes, lightly sharpened to recover what the
+upscale costs, and saved as JPEG: around 100 KB each, against 430 KB and 840 KB for the
+transparent PNGs they replaced.
+
+Materials, dimensions, finish and lead time are left off, as with every other piece
+added since August.
